@@ -9,7 +9,7 @@ Uma skill de elite para o framework **PO-UI**, projetada sob os padrões de exce
 
 ## 💎 Visão Geral
 
-Esta "Skill" (Servidor MCP) fornece um conjunto de ferramentas poderosas para agentes de IA (como Cursor, Claude e VS Code) interagirem diretamente com o ecossistema PO-UI. Ela permite a descoberta de componentes, acesso instantâneo a documentações técnicas e geração de código seguindo as melhores práticas da TOTVS.
+Esta "Skill" (Servidor MCP) fornece um conjunto de ferramentas poderosas para agentes de IA (como Antigravity, Claude e VS Code) interagirem diretamente com o ecossistema PO-UI. Ela permite a descoberta de componentes, acesso instantâneo a documentações técnicas e geração de código seguindo as melhores práticas da TOTVS.
 
 ### 🌟 Diferenciais
 - **Inteligência Adaptativa**: Alinhada com o EVO-METHOD, ajustando-se desde pequenas correções até arquiteturas complexas.
@@ -33,7 +33,7 @@ Esta "Skill" (Servidor MCP) fornece um conjunto de ferramentas poderosas para ag
 
 ### Pré-requisitos
 - Node.js v20 ou superior
-- Uma IDE compatível com MCP (Cursor recomendado)
+- Uma IDE ou agente compatível com MCP (Antigravity recomendado)
 
 ### Passo 1: Clonar e Compilar
 ```bash
@@ -43,15 +43,17 @@ npm install
 npm run build
 ```
 
-### Passo 2: Configurar no Cursor
-Adicione o seguinte ao seu `mcp.json` (ou nas configurações de MCP do Cursor):
+### Passo 2: Configuração
+Adicione o servidor MCP às configurações do seu agente (ex: Antigravity ou Claude Desktop).
+
+Exemplo de configuração (ajuste o caminho para o diretório do projeto):
 
 ```json
 {
   "mcpServers": {
     "po-ui-skill": {
       "command": "node",
-      "args": ["C:/Ricardo/opencode/skill-po-ui/build/index.js"]
+      "args": ["./build/index.js"]
     }
   }
 }

@@ -6,7 +6,7 @@ Siga estes passos para configurar a Skill PO-UI no seu ambiente.
 O código deve ser mantido localmente para que o servidor MCP possa ser executado via stdio.
 
 ```bash
-cd C:\Ricardo\opencode
+# Navegue até o diretório de seus projetos
 git clone https://github.com/ricardops34/po-ui.git skill-po-ui
 cd skill-po-ui
 ```
@@ -19,30 +19,21 @@ npm install
 npm run build
 ```
 
-## 3. Configuração na IDE
-
-### Cursor
-1. Abra as configurações do Cursor.
-2. Vá em **General** > **MCP**.
-3. Clique em **+ Add New MCP Server**.
-4. Configure:
-   - **Name**: `po-ui-skill`
-   - **Type**: `stdio`
-   - **Command**: `node C:/Ricardo/opencode/skill-po-ui/build/index.js`
-
-### Claude Desktop
-Edite seu arquivo `claude_desktop_config.json` (geralmente em `%APPDATA%\Claude\config.json` no Windows):
+### Antigravity / Claude Desktop
+Edite as configurações de MCP do seu agente. No Antigravity, isso pode ser feito via interface ou arquivo de configuração. No Claude Desktop, edite o arquivo `claude_desktop_config.json` (geralmente em `%APPDATA%\Claude\config.json` no Windows):
 
 ```json
 {
   "mcpServers": {
     "po-ui-skill": {
       "command": "node",
-      "args": ["C:/Ricardo/opencode/skill-po-ui/build/index.js"]
+      "args": ["/caminho/para/o/projeto/skill-po-ui/build/index.js"]
     }
   }
 }
 ```
+> [!TIP]
+> Substitua `/caminho/para/o/projeto/` pelo caminho real onde você clonou o repositório.
 
 ## 4. Testando a Skill
 No chat da sua IA, você pode perguntar:
