@@ -1,4 +1,4 @@
-# 🚀 Skill PO-UI MCP | Evolution Edition
+# 🚀 Skill PO-UI MCP
 
 [![Powered by Antigravity](https://img.shields.io/badge/Powered%20by-Antigravity-blueviolet?style=for-the-badge)](https://github.com/EvolutionAPI/EVO-METHOD)
 [![Methodology: EVO-METHOD](https://img.shields.io/badge/Methodology-EVO--METHOD-orange?style=for-the-badge)](https://github.com/EvolutionAPI/EVO-METHOD)
@@ -79,5 +79,3 @@ Para mais detalhes, visite: [EvolutionAPI/EVO-METHOD](https://github.com/Evoluti
 - [EVO-METHOD GitHub](https://github.com/EvolutionAPI/EVO-METHOD)
 
 ---
-
-Desenvolvido com ❤️ por **Antigravity** para a comunidade **EvolutionAPI**.
